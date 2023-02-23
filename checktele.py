@@ -221,6 +221,24 @@ def gen_user(choice):
             username = username+'bot'
         else:
             pass
+    if choice == "14":
+        c = random.choices(a)
+        d = random.choices(b)
+        s = random.choices(e)
+        f = [c[0], "_", s[0]]
+        random.shuffle(f)
+        username = ''.join(f)
+        username = username+'bot'
+        if username in banned[0]:
+            c = random.choices(a)
+            d = random.choices(b)
+            s = random.choices(e)
+            f = [c[0], "_", s[0]]
+            random.shuffle(f)
+            username = ''.join(f)
+            username = username+'bot'
+        else:
+            pass
     if choice == "13":
         c = random.choices(a)
         d = random.choices(b)
